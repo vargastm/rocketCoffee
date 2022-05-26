@@ -36,5 +36,7 @@ export const Navigation = styled.nav`
 
     border: 1px solid var(--button);
     border-radius: 6px;
+
+    cursor: pointer;
   }
 `
