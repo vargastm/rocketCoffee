@@ -1,16 +1,21 @@
 import styled from 'styled-components'
 
 export const Container = styled.header`
-  width: 918px;
+  width: 57.375rem;
   margin: auto;
 `
 
 export const Navigation = styled.nav`
-  margin: 50px 0 40px 0;
+  height: 140px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  position: relative;
 
+  img {
+    position: absolute;
+    left: 0;
+  }
 
   ul {
     display: flex;
@@ -24,6 +29,9 @@ export const Navigation = styled.nav`
   }
 
   button {
+    position: absolute;
+    right: -2.375rem;
+
     background: none;
     color: var(--text-color);
 
@@ -31,8 +39,7 @@ export const Navigation = styled.nav`
     font-weight: 800;
     font-size: 0.6875rem;
 
-    height: 100%;
-    padding: 11px 38px;
+    padding: 0.6875rem 2.375rem;
 
     border: 1px solid var(--button);
     border-radius: 6px;

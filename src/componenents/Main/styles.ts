@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const Container = styled.main`
-  width: 918px;
-  height: calc(100vh - 140px);
+  width: 57.375rem;
+  height: calc(100vh - 8.75rem);
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -20,13 +20,12 @@ export const Container = styled.main`
     span {
       display: block;
       color: #000;
-      -webkit-text-stroke-width: 2px;
-      -webkit-text-stroke-color: var(--button);
+      text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
     }
   }
 
   img {
     height: 100%;
-    max-height: 600px;
+    max-height: 37.5rem;
   }
 `
