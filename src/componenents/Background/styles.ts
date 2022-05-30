@@ -7,6 +7,9 @@ export const Container = styled.div`
   position: absolute;
   height: 100%;
   width: 100%;
+  @media (max-width:800px) {
+    width: 0;
+  }
 `
 export const Right = styled.div`
   width: 620px;
@@ -17,6 +20,10 @@ export const Right = styled.div`
   position: absolute;
   top: -100px;
   right: 0;
+
+  @media (max-width:800px) {
+    display: none;
+  }
 `
 export const Left = styled.div`
   width: 793px;
@@ -28,4 +35,8 @@ export const Left = styled.div`
   position: absolute;
   bottom: 0;
   left: -200px;
+
+  @media (max-width:800px) {
+    display: none;
+  }
 `

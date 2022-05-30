@@ -3,6 +3,14 @@ import styled from 'styled-components'
 export const Container = styled.header`
   width: 57.375rem;
   margin: auto;
+
+  @media (max-width:1080px) {
+    width: 700px;
+  }
+
+  @media (max-width:800px) {
+    width: 100%;
+  }
 `
 
 export const Navigation = styled.nav`
@@ -31,19 +39,18 @@ export const Navigation = styled.nav`
   button {
     position: absolute;
     right: -2.375rem;
+  }
 
-    background: none;
-    color: var(--text-color);
+  @media (max-width:800px) {
+    display: none;
+  }
+`
+export const NavigationMobile = styled.nav`
+  display: none;
+  justify-content: space-between;
+  margin: 40px 25px;
 
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 0.6875rem;
-
-    padding: 0.6875rem 2.375rem;
-
-    border: 1px solid var(--button);
-    border-radius: 6px;
-
-    cursor: pointer;
+  @media (max-width:800px) {
+    display: flex;
   }
 `

@@ -1,6 +1,9 @@
 import logoDesktop from '../../assets/logo-desktop.svg'
+import logoMobile from '../../assets/logo-mobile.svg'
+import openMenuImg from '../../assets/menu-buguer-open.svg'
+import { TakeCoffeeButton } from '../TakeCoffeeButton';
 
-import { Container, Navigation } from "./styles";
+import { Container, Navigation, NavigationMobile } from "./styles";
 
 export function Header() {
   return(
@@ -14,8 +17,16 @@ export function Header() {
           <li><a href="#">Gift Cards</a></li>
           <li><a href="#">Lojas</a></li>
         </ul>
-        <button>Pegar meu café</button>
+        <TakeCoffeeButton/>
       </Navigation>
+
+      <NavigationMobile>
+          <img src={logoMobile} alt='Rocket Coffe' />
+          <img
+            src={openMenuImg}
+            alt='menu'
+          />
+      </NavigationMobile>
     </Container>
   )
 }
